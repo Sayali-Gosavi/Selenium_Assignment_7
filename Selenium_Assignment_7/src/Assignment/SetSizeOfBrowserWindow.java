@@ -28,10 +28,11 @@ public class SetSizeOfBrowserWindow {
 	}
 
 	@Test
-	public void test() {
+	public void test() throws InterruptedException {
 		Dimension size = new Dimension(800,480);
         //Resize current window to the set dimension
         d.manage().window().setSize(size);
+        Thread.sleep(5000);
 	}
 
 }
